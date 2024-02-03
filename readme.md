@@ -1,3 +1,7 @@
+Fork of WLED, to improve Potentiometer smoothness, by changing ANALOG_BTN_READ_CYCLE to 50 in button.ccp
+
+
+
 <p align="center">
   <img src="/images/wled_logo_akemi.png">
   <a href="https://github.com/Aircoookie/WLED/releases"><img src="https://img.shields.io/github/release/Aircoookie/WLED.svg?style=flat-square"></a>
