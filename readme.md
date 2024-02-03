@@ -1,6 +1,10 @@
-Fork of WLED, to improve Potentiometer smoothness, by changing ANALOG_BTN_READ_CYCLE to 50 in button.ccp
+# smoothpoti comment
 
+Fork of WLED 14.0.1, to improve Potentiometer smoothness, by changing ANALOG_BTN_READ_CYCLE to 50ms (default every 250ms) in button.ccp
 
+This might introduce some stability issues like (thanks to @softhack007):
+- ADC on espressif chips is very noisy. Reading the potentiometer to often might introduce flickering.
+- analogread() on 8266 causes a delay of 5-10 milliseconds. if this is done too often, the wifi driver might die (crash).
 
 <p align="center">
   <img src="/images/wled_logo_akemi.png">
